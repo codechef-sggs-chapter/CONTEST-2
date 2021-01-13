@@ -36,7 +36,7 @@ First-line gives T number of test cases
 
 ## Output Format
 
-Output a single line with the maximum damage that the Colossal Titan can cause
+For each test case output a single line with the maximum damage that the Colossal Titan can cause
 
 ## Sample Test
 
