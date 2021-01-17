@@ -10,7 +10,7 @@ The power of all the worriers in the team is 1 except for Levi and Mikasa with L
 Colossal titan has only one move and he wants to maximize his damage to the team.
 <br>
 
-<b>Damage caused by Colossal titan is equivalent to the amount of power he removed from team Levi after killing the horseman with his foot. </b>
+Damage caused by Colossal titan is equivalent to the amount of power he removed from team Levi after killing the horseman with his foot.
 <br><br>
 
 You will be given a binary string S (consisting of zero and one). Where 1 represents a horseman is present and 0 represents an empty spot in the queue. The first position of the string represents the end of the queue and the end of the string represents the start of the queue. It is guaranteed that the start and end of the string will always be with 1 representing Levi and Mikasa.
@@ -32,7 +32,7 @@ First-line gives T number of test cases
 
 1 <= T <= 100 <br>
 2 <= |S| <= 10^5 <br>
-1 <= L,M,N <= 10^9 <br>
+1 <= L,M,F <= 10^9 <br>
 
 ## Output Format
 
@@ -54,13 +54,12 @@ Output
 5
 ```
 
-### Explaination
+## Explanation
 
 Lets represent 1001111 as S1,S2,..S7
-Colossal
-can kill horsemen @ S1,S2,S3
-can kill horsemen @ S4,S5,S6
-..
-can kill worries @ S5,S6,S7 etc (all contiguous substring possible)
+
+Colossal,
+can kill horsemen @ S1,S2,S3 , @ S4,S5,S6, @ S5,S6,S7 etc (all contiguous substring possible)
+
 The maximum damaged will be caused when Colossal puts his foot on the last three indexes of the string ie S5,S6,S7. Causing damage to two horsemen(at position S5 and S6) and Mikasa(at position S7).
 max_damage = 1 + 1 + 3 = 5
